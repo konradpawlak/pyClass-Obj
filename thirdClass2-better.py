@@ -5,7 +5,7 @@ class Employee:
         self.name = name
         self.age = age
         self.position = position
-        self.salary = salary
+        self.set_salary(salary) # SETTER FUNCTION PURPOSE IS TO DO SOMETHING BEFORE THE VALUE GET ASSIGNED
     
     def increase_salary(self, percent):
         self.salary += self.salary * (percent/100)
@@ -21,6 +21,9 @@ class Employee:
         )
     
     def get_salary(self):
+        # return f"${self.salary}"
+        # return round{self.salary, 2}
+        # logging.info("Someone accessed th salary attribute.")
         return self.salary
     
     def set_salary(self, salary):
@@ -43,4 +46,4 @@ print(repr(employee1))
 print(eval(repr(employee1)))
 
 employee3.set_salary(1300)
-print(employee3.get_salary())
+print(employee3.get_salary()) # GETTER FUNCTION IS MOSTLY FOR CONSISTENCY, just returns the value itself. 
