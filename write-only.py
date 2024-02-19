@@ -52,3 +52,5 @@ def salary(self, salary):
         raise ValueError('asnfojfaobf minimum 1k dollars broooo')
     self._annual_salary = None
     self._salary = salary
+
+
